@@ -71,6 +71,23 @@
   <script>
     $(document).ready(function(){
 
+      /*
+        Write : 물 잔상 효과
+        Date : 2019.05.21
+        작성자 : 전형동
+      */
+      $('.home-area').ripples({
+        dropRadius : 12,
+        perturbance : 0.05
+      });
+
+
+      /*
+        Write : 페이지 스크롤
+        Date : 2019.05.21
+        작성자 : 전형동
+      */
+
       $('#pagepiling').pagepiling({
         /*direction : 'horizontal',*/
         direction : 'vertical',
@@ -89,13 +106,18 @@
         touchSensitivity : 5
       });
 
-        /*$('canvas').css("display","none");*/
+
 
     });
-    /*$(".home-area").ripples({
-      resolution : 200,
-      perturbance : 0.04
-    });*/
+
+
+    /*
+      Write : 마우스 스크롤
+      Date : 2019.05.21
+      작성자 : 전형동
+    */
+    $.fn.pagepiling.setMouseWheelScrolling();
+    
   </script>
 </body>
 </html>
