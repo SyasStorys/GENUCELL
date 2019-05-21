@@ -550,7 +550,7 @@
         var backgroundHeight = this.backgroundHeight * scale;
       }
       else if(backgroundSize == 'none') {
-        $('.home-area').css("background","cover");
+        $('.home-area').css("background-image","cover");
       }
       else {
         backgroundSize = backgroundSize.split(' ');
