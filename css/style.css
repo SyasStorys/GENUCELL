@@ -1,0 +1,149 @@
+h3{
+  color : #fff;
+  font-size : 48px;
+  font-family: Noto Sans;
+  margin : 0;
+}
+
+p{
+  font-family: Noto Sans;
+  line-height: 30px;
+  color : #fff;
+}
+
+nav {
+  position: absolute;
+  top : 0;
+  height : 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color : #fafafa;
+  font-family: Noto Sans;
+  letter-spacing: 1px;
+}
+
+.home-area {
+  background-image: url(../img/bg_2.jpg);
+  -webkit-background-size : cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-area h2 {
+  color : #fff;
+  font-size: 62px;
+  font-family: Noto Sans;
+  margin : 0;
+}
+
+.wrapper {
+  width : 1170px;
+  margin : 0 auto;
+}
+
+.banner-area p {
+  padding : 0 60% 0 0;
+  font-size: 25px;
+  text-shadow: 3px 2px 2px gray;
+}
+
+.contact-area input[type=text], .contact-area input[type=email]{
+  width : 30%;
+  height : 40px;
+  padding : 0 20px;
+}
+
+#navbar a:hover {
+  color : #000;
+  font-weight: bold;
+}
+
+.contact-area textarea {
+  width : 30%;
+  padding : 10px 20px;
+}
+
+.contact-area input[type=submit] {
+  background : saddlebrown;
+  padding : 10px 50px;
+  color : #fff;
+  font-size : 17px;
+  text-transform: uppercase;
+  border : 0;
+}
+
+/* responsive.css */
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width : 90%;
+  }
+  #navbar > ul > li {
+    font-size: 30px;
+  }
+  .home-area h2 {
+    font-size : 100px;
+  }
+  h3 {
+    font-size : 90px;
+  }
+  .banner-area p {
+    padding : 0 12% 0 0;
+    font-size : 45px;
+  }
+  .about-area p, .portfolio-area p, .services-area p, .contact-area p {
+    line-height : 130%;
+    font-size: 60px;
+  }
+  .contact-area input[type=text], .contact-area input[type=email]{
+    width : 85%;
+    height : 30px;
+  }
+  .contact-area textarea {
+    width : 85%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .wrapper {
+    width : 90%;
+  }
+  #navbar > ul > li {
+    font-size: 30px;
+  }
+  .home-area h2 {
+    font-size : 100px;
+  }
+  h3 {
+    font-size : 90px;
+  }
+  .banner-area p {
+    padding : 0 12% 0 0;
+    font-size : 45px;
+  }
+  .about-area p, .portfolio-area p, .services-area p, .contact-area p {
+    line-height : 130%;
+    font-size: 60px;
+  }
+  .contact-area input[type=text], .contact-area input[type=email]{
+    width : 85%;
+    height : 60px;
+  }
+  .contact-area textarea {
+    width : 85%;
+    height : 140px;
+  }
+}
+
