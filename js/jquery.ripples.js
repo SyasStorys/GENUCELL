@@ -521,7 +521,6 @@
       var backgroundSize = this.$el.css('background-size');
       var backgroundAttachment = this.$el.css('background-attachment');
       var backgroundPosition = translateBackgroundPosition(this.$el.css('background-position'));
-      var background_Image = this.$el.css('background-image');
 
       // Here the 'container' is the element which the background adapts to
       // (either the chrome window or some element, depending on attachment)
@@ -549,10 +548,6 @@
 
         var backgroundWidth = this.backgroundWidth * scale;
         var backgroundHeight = this.backgroundHeight * scale;
-      }
-      else if(background_Image == 'none') {
-        $('.home-area').css("background-image","");
-        $('canvas').css("display","none");
       }
       else {
         backgroundSize = backgroundSize.split(' ');

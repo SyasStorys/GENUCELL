@@ -6,6 +6,7 @@
   <title>GENUCELL - 어제와 다른 또 하나의 나 Go-Back!</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
+
 </head>
 <body>
 
@@ -69,6 +70,7 @@
   <script type="text/javascript" src="js/jquery.ripples.js"></script>
   <script>
     $(document).ready(function(){
+
       $('#pagepiling').pagepiling({
         /*direction : 'horizontal',*/
         direction : 'vertical',
@@ -86,6 +88,10 @@
         normalScrollElements : 5,
         touchSensitivity : 5
       });
+
+        $('.home-area').css("background-image","");
+        $('canvas').css("display","none");
+
     });
     $(".home-area").ripples({
       resolution : 200,
