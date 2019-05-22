@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>GENUCELL - 어제와 다른 또 하나의 나 Go-Back!</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
 
   <div id="pagepiling">
     <div class="section home-area" id="home">
       <div class="wrapper">
-        <nav id="navbar">
+        <!-- <nav id="navbar">
           <ul id="myMenu">
             <li data-menuanchor="home"><a href="#home">Home</a></li>
             <li data-menuanchor="about"><a href="#about">About</a></li>
@@ -21,15 +21,27 @@
             <li data-menuanchor="service"><a href="#service">Services</a></li>
             <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
+        </nav> -->
 
         <div class="banner-area">
           <h2>제너셀 <br>고백키트</h2>
           <p>순수했던 나를 상상하면서 Go Back</p>
         </div>
-
+        <div class="overlay" id="myDiv">
+          <a href="#" onclick="closeDiv()" class="close">&times;</a>
+          <div class="content">
+            <a href="#">프로젝트</a>
+            <a href="#">제품소개</a>
+            <a href="#">채용정보</a>
+          </div>  
+        </div>
+        <div class="open" onclick="openDiv()" > Open </div>
       </div>
     </div>
+
+
+
+
     <div class="section about-area" id="about">
       <div class="wrapper">
         <h3>Little About</h3>
@@ -60,14 +72,13 @@
         <p><textarea cols="30" rows="10" placeholder="Enter Your Queries"></textarea></p>
         <p><input type="submit" value="submit"></p>
       </div>
-
-
     </div>
   </div>
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
   <script type="text/javascript" src="js/jquery.ripples.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
   <script>
     $(document).ready(function(){
 
@@ -95,9 +106,9 @@
         /*direction : 'horizontal',*/
         direction : 'vertical',
         sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#03a0b0', '#ff6f69'],
-        anchors : ['home', 'about', 'port', 'service', 'contact'],
+        anchors : ['home', 'navbar', 'about', 'port', 'service', 'contact'],
         menu : '#myMenu',
-        scrollingSpeed: 10,
+        scrollingSpeed: 1,
         navigation : {
           'textColor' : '#000',
           'bulletsColor' : '#000',
@@ -124,4 +135,5 @@
   </script>
 </body>
 </html>
+
 

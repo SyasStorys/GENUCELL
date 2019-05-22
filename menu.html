@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+</head>
+<body>
+
+	<div id="openMenu">
+		<img id="menuImg" src="img/menu.png" alt="menu">
+	</div>
+
+	<div id="closeMenu">
+		<img id="closeImg" src="img/close.png" alt="close">
+	</div>
+
+
+
+	<div id="main">
+		<div id="logoSection">
+			<img src="img/logo.png"  alt="logo"/>
+		</div>
+		<div id="menuSection">
+			<ul>
+				<li onmouseover="anim('product')">
+					<div id="product" class="menu">
+						PRODUC
+						<div id="rotate">T</div>
+					</div>
+				</li>
+				<li onmouseover="anim('work')">
+					<div id="work" class="menu">
+						WOR
+						<div id="rotate">K</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function anim(targetedDiv){
+
+		var targetedLetter = $("#"+targetedDiv+" #rotate").text();
+		var asciiValue = targetedLetter.charCodeAt(0); //return ascii value
+		var pointer = 65; // Ascii of 'A' (Starting Point)
+
+		changeChar();
+
+		function changeChar(){
+
+			if(pointer <= asciiValue) {
+				$("#"+targetedDiv+" #rotate").text(String.fromCharCode(pointer));
+
+				// fromCharCode function conver pointer value in character such as 65=A
+
+				pointer++;
+				setTimeout(changeChar,20); // call the function after every 20MS
+			}
+			else {
+				$(this).stop;
+			}
+		}
+
+	}
+</script>
+</html>
