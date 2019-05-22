@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
 <body>
 
@@ -35,7 +37,7 @@
             <a href="#">채용정보</a>
           </div>  
         </div>
-        <div class="open" onclick="openDiv()" > Open </div>
+        <div class="benner-open" onclick="openDiv()" > Open </div>
       </div>
     </div>
 
@@ -44,36 +46,103 @@
 
     <div class="section about-area" id="about">
       <div class="wrapper">
-        <h3>Little About</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>Little About</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has </p>
       </div>
     </div>
 
     <div class="section portfolio-area" id="port">
       <div class="wrapper">
-        <h3>Some Works of Mine</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>Some Works of Mine</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="btnBlock">
+          <div class="productBtn" onclick="openProduct()" > <span>제품 상세보기</span> </div>
+        </div>
       </div>
 
     </div>
     <div class="section services-area" id="service">
       <div class="wrapper">
-        <h3>These are my Services</h3>
+        <h2>These are my Services</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
 
     </div>
     <div class="section contact-area" id="contact">
-      <div class="wrapper">
-        <h3>Contact area</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <p><input type="text" placeholder="Enter Your Name"></p>
-        <p><input type="email" placeholder="Enter Your Email"></p>
-        <p><textarea cols="30" rows="10" placeholder="Enter Your Queries"></textarea></p>
-        <p><input type="submit" value="submit"></p>
+      <!-- Footer -->
+      <div class="footer-wrapper">
+        <div class="button-wrapper">
+          <button class="button">Open</button>
+        </div>
+
+        <div class="three-column-footer-contact-form-container">
+          <footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
+            <div class="footer-left" data-equalizer-watch>
+              <div class="baseline">
+                <div class="contact-details">
+                  <h6>Contact details</h6>
+                  <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</p>
+                  <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
+                  <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</p>
+                </div>
+                <div class="newsletter">
+                  <div class="input-group">
+                    <h6>Sign up for our newsletter</h6>
+                    <input class="input-group-field" type="email" placeholder="Email address">
+                  </div>
+                  <a class="button expanded" href="#">Submit</a>
+                </div>
+              </div>
+             </div>
+            <div class="footer-center" data-equalizer-watch>
+              <div class="baseline">
+                <div class="newsletter">
+                  <h6>Contact form</h6>
+                  <div class="input-group">
+                    <input class="input-group-field" type="text" placeholder="Name">
+                    <input class="input-group-field" type="email" placeholder="Email address">
+                    <textarea placeholder="Message"></textarea>
+                  </div>
+                  <a class="button expanded" href="#">Submit</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-right" data-equalizer-watch>
+              <div class="baseline">
+                <img class="thumbnail" src="http://placehold.it/100">
+                <h6>Opening times</h6>
+                <p>Mon - Fri 9:00am - 5:00pm</p>
+                <p>Sat 9:00am - 8:00pm</p>
+                <p>Sun 9:00am - 4:00pm</p>
+                <div class="social">
+                  <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
       </div>
+
+
+      <div class="wrapper">
+        <h2>Contact area</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+
     </div>
+
+
+
+   
+    
+
   </div>
+
+
+  
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
@@ -105,7 +174,7 @@
       $('#pagepiling').pagepiling({
         /*direction : 'horizontal',*/
         direction : 'vertical',
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#03a0b0', '#ff6f69'],
+        sectionsColor: ['#f2f2f2', '#ABABAD', '#94B3E4', '#03a0b0', '#ff6f69', '#FFB275'],
         anchors : ['home', 'navbar', 'about', 'port', 'service', 'contact'],
         menu : '#myMenu',
         scrollingSpeed: 1,
@@ -119,18 +188,18 @@
         normalScrollElements : 5,
         touchSensitivity : 5
       });
+      
 
+      /*
+        Write : 마우스 스크롤
+        Date : 2019.05.21
+        작성자 : 전형동
+      */
 
-
+      $.fn.pagepiling.setMouseWheelScrolling();
     });
 
 
-    /*
-      Write : 마우스 스크롤
-      Date : 2019.05.21
-      작성자 : 전형동
-    */
-    $.fn.pagepiling.setMouseWheelScrolling();
     
   </script>
 </body>
