@@ -2,47 +2,34 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+  
   <title>GENUCELL - 어제와 다른 또 하나의 나 Go-Back!</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
 </head>
 <body>
-
   <div id="pagepiling">
     <div class="section home-area" id="home">
       <div class="wrapper">
-        <!-- <nav id="navbar">
-          <ul id="myMenu">
-            <li data-menuanchor="home"><a href="#home">Home</a></li>
-            <li data-menuanchor="about"><a href="#about">About</a></li>
-            <li data-menuanchor="port"><a href="#port">Portfolio</a></li>
-            <li data-menuanchor="service"><a href="#service">Services</a></li>
-            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav> -->
-
         <div class="banner-area">
           <h2>제너셀 <br>고백키트</h2>
-          <p>순수했던 나를 상상하면서 Go Back</p>
+          <span>추억 속으로 Go Back! <br />그 날의 당신을 기억하나요?</span>
         </div>
         <div class="overlay" id="myDiv">
           <a href="#" onclick="closeDiv()" class="close">&times;</a>
           <div class="content">
-            <a href="#">프로젝트</a>
-            <a href="#">제품소개</a>
+            <a href="project.html">프로젝트</a>
+            <a href="product.html">제품소개</a>
             <a href="#">채용정보</a>
           </div>  
         </div>
         <div class="benner-open" onclick="openDiv()" > Open </div>
       </div>
     </div>
-
-
-
 
     <div class="section about-area" id="about">
       <div class="wrapper">
@@ -133,12 +120,6 @@
       </div>
 
     </div>
-
-
-
-   
-    
-
   </div>
 
 
@@ -175,8 +156,12 @@
         /*direction : 'horizontal',*/
         direction : 'vertical',
         sectionsColor: ['#f2f2f2', '#ABABAD', '#94B3E4', '#03a0b0', '#ff6f69', '#FFB275'],
-        anchors : ['home', 'navbar', 'about', 'port', 'service', 'contact'],
-        menu : '#myMenu',
+        anchors : ['home',  'about', 'port', 'service', 'contact'],
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        menu: null,
         scrollingSpeed: 1,
         navigation : {
           'textColor' : '#000',
@@ -184,19 +169,27 @@
           'position' : 'right',
           'tooltips' : ['Home', 'About', 'Portfolio', 'Services', 'Contact']
         },
+        normalScrollElements: null,
         keyboardScrolling: true,
-        normalScrollElements : 5,
-        touchSensitivity : 5
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity : 5,
+        sectionSelector: '.section',
+        animateAnchor : false,
+        
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
       });
       
 
       /*
-        Write : 마우스 스크롤
+        마우스 스크롤
         Date : 2019.05.21
         작성자 : 전형동
       */
 
-      $.fn.pagepiling.setMouseWheelScrolling();
+      $.fn.pagepiling.setAllowScrolling(true);
     });
 
 

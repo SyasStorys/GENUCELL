@@ -1426,7 +1426,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 a {
 	line-height: inherit;
-	color: #1779ba;
+	color: #000;
 	text-decoration: none;
 	cursor: pointer
 }
@@ -1987,7 +1987,7 @@ select[multiple] {
 	line-height: 1;
 	text-align: center;
 	cursor: pointer;
-	background-color: #1779ba;
+	background-color: #000;
 	color: #fefefe
 }
 
@@ -2020,7 +2020,7 @@ select[multiple] {
 }
 
 .button.primary {
-	background-color: #1779ba;
+	background-color: #000;
 	color: #fefefe
 }
 
@@ -2070,8 +2070,8 @@ select[multiple] {
 }
 
 .button.hollow {
-	border: 1px solid #1779ba;
-	color: #1779ba
+	border: 1px solid #000;
+	color: #000
 }
 
 .button.hollow, .button.hollow:focus, .button.hollow:hover {
@@ -2084,8 +2084,8 @@ select[multiple] {
 }
 
 .button.hollow.primary {
-	border: 1px solid #1779ba;
-	color: #1779ba
+	border: 1px solid #000;
+	color: #000
 }
 
 .button.hollow.primary:focus, .button.hollow.primary:hover {
@@ -2140,7 +2140,7 @@ select[multiple] {
 
 .button.disabled, .button.disabled:focus, .button.disabled:hover,
 	.button[disabled], .button[disabled]:focus, .button[disabled]:hover {
-	background-color: #1779ba;
+	background-color: #000;
 	color: #fefefe
 }
 
@@ -2152,7 +2152,7 @@ select[multiple] {
 .button.disabled.primary, .button.disabled.primary:focus, .button.disabled.primary:hover,
 	.button[disabled].primary, .button[disabled].primary:focus, .button[disabled].primary:hover
 	{
-	background-color: #1779ba;
+	background-color: #000;
 	color: #fefefe
 }
 
@@ -2245,7 +2245,7 @@ select[multiple] {
 	border-bottom: 0;
 	font-size: .75rem;
 	line-height: 1;
-	color: #1779ba
+	color: #000
 }
 
 :last-child:not (.is-active )>.accordion-title {
@@ -2294,7 +2294,7 @@ select[multiple] {
 	content: "";
 	border-bottom-width: 0;
 	border-top-style: solid;
-	border-color: #1779ba transparent transparent;
+	border-color: #000 transparent transparent;
 	position: absolute;
 	top: 50%;
 	margin-top: -3px;
@@ -2318,7 +2318,7 @@ select[multiple] {
 }
 
 .badge, .badge.primary {
-	background: #1779ba;
+	background: #000;
 	color: #fefefe
 }
 
@@ -2374,7 +2374,7 @@ select[multiple] {
 }
 
 .breadcrumbs a {
-	color: #1779ba
+	color: #000
 }
 
 .breadcrumbs a:hover {
@@ -2506,7 +2506,7 @@ select[multiple] {
 }
 
 .button-group.primary .button {
-	background-color: #1779ba;
+	background-color: #000;
 	color: #fefefe
 }
 
@@ -2841,7 +2841,7 @@ select[multiple] {
 }
 
 .menu .active>a {
-	background: #1779ba;
+	background: #000;
 	color: #fefefe
 }
 
@@ -2986,7 +2986,7 @@ select[multiple] {
 	content: "";
 	border-right-width: 0;
 	border-left-style: solid;
-	border-color: transparent transparent transparent #1779ba;
+	border-color: transparent transparent transparent #000;
 	position: absolute;
 	top: 50%;
 	margin-top: -6px;
@@ -3000,7 +3000,7 @@ select[multiple] {
 	border: 6px inset;
 	content: "";
 	border-right-style: solid;
-	border-color: transparent #1779ba transparent transparent;
+	border-color: transparent #000 transparent transparent;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: .75rem;
@@ -3061,7 +3061,7 @@ select[multiple] {
 	content: "";
 	border-bottom-width: 0;
 	border-top-style: solid;
-	border-color: #1779ba transparent transparent;
+	border-color: #000 transparent transparent;
 	right: 5px;
 	margin-top: -3px
 }
@@ -3100,7 +3100,7 @@ select[multiple] {
 	content: "";
 	border-left-width: 0;
 	border-right-style: solid;
-	border-color: transparent #1779ba transparent transparent
+	border-color: transparent #000 transparent transparent
 }
 
 .dropdown.menu.vertical>li.opens-right>a:after {
@@ -3111,7 +3111,7 @@ select[multiple] {
 	content: "";
 	border-right-width: 0;
 	border-left-style: solid;
-	border-color: transparent transparent transparent #1779ba
+	border-color: transparent transparent transparent #000
 }
 
 @media print , screen and (min-width:40em) {
@@ -3137,7 +3137,7 @@ select[multiple] {
 		content: "";
 		border-bottom-width: 0;
 		border-top-style: solid;
-		border-color: #1779ba transparent transparent;
+		border-color: #000 transparent transparent;
 		right: 5px;
 		margin-top: -3px
 	}
@@ -3163,7 +3163,7 @@ select[multiple] {
 		content: "";
 		border-left-width: 0;
 		border-right-style: solid;
-		border-color: transparent #1779ba transparent transparent
+		border-color: transparent #000 transparent transparent
 	}
 	.dropdown.menu.medium-vertical>li.opens-right>a:after {
 		display: block;
@@ -3173,7 +3173,7 @@ select[multiple] {
 		content: "";
 		border-right-width: 0;
 		border-left-style: solid;
-		border-color: transparent transparent transparent #1779ba
+		border-color: transparent transparent transparent #000
 	}
 }
 
@@ -3200,7 +3200,7 @@ select[multiple] {
 		content: "";
 		border-bottom-width: 0;
 		border-top-style: solid;
-		border-color: #1779ba transparent transparent;
+		border-color: #000 transparent transparent;
 		right: 5px;
 		margin-top: -3px
 	}
@@ -3226,7 +3226,7 @@ select[multiple] {
 		content: "";
 		border-left-width: 0;
 		border-right-style: solid;
-		border-color: transparent #1779ba transparent transparent
+		border-color: transparent #000 transparent transparent
 	}
 	.dropdown.menu.large-vertical>li.opens-right>a:after {
 		display: block;
@@ -3236,7 +3236,7 @@ select[multiple] {
 		content: "";
 		border-right-width: 0;
 		border-left-style: solid;
-		border-color: transparent transparent transparent #1779ba
+		border-color: transparent transparent transparent #000
 	}
 }
 
@@ -3303,7 +3303,7 @@ select[multiple] {
 	content: "";
 	border-left-width: 0;
 	border-right-style: solid;
-	border-color: transparent #1779ba transparent transparent
+	border-color: transparent #000 transparent transparent
 }
 
 .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right>a:after {
@@ -3314,7 +3314,7 @@ select[multiple] {
 	content: "";
 	border-right-width: 0;
 	border-left-style: solid;
-	border-color: transparent transparent transparent #1779ba
+	border-color: transparent transparent transparent #000
 }
 
 .is-dropdown-submenu .is-dropdown-submenu {
@@ -3362,7 +3362,7 @@ select[multiple] {
 }
 
 .label, .label.primary {
-	background: #1779ba;
+	background: #000;
 	color: #fefefe
 }
 
@@ -3864,7 +3864,7 @@ select[multiple] {
 
 .pagination .current {
 	padding: .1875rem .625rem;
-	background: #1779ba;
+	background: #000;
 	color: #fefefe;
 	cursor: default
 }
@@ -3905,7 +3905,7 @@ select[multiple] {
 }
 
 .progress.primary .progress-meter {
-	background-color: #1779ba
+	background-color: #000
 }
 
 .progress.secondary .progress-meter {
@@ -3929,7 +3929,7 @@ select[multiple] {
 	display: block;
 	width: 0;
 	height: 100%;
-	background-color: #1779ba
+	background-color: #000
 }
 
 .progress-meter-text {
@@ -3988,7 +3988,7 @@ select[multiple] {
 	width: 1.4rem;
 	height: 1.4rem;
 	border-radius: 0;
-	background-color: #1779ba;
+	background-color: #000;
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	-ms-touch-action: manipulation;
@@ -4257,7 +4257,7 @@ input+.switch-paddle {
 }
 
 input:checked ~.switch-paddle {
-	background: #1779ba
+	background: #000
 }
 
 input:checked ~.switch-paddle:after {
@@ -4483,7 +4483,7 @@ table.hover:not (.unstriped ) tr:nth-of-type(even):hover {
 }
 
 .tabs.primary {
-	background: #1779ba
+	background: #000
 }
 
 .tabs.primary>li>a {
@@ -4503,7 +4503,7 @@ table.hover:not (.unstriped ) tr:nth-of-type(even):hover {
 	padding: 1.25rem 1.5rem;
 	font-size: .75rem;
 	line-height: 1;
-	color: #1779ba
+	color: #000
 }
 
 .tabs-title>a:hover {
@@ -4513,7 +4513,7 @@ table.hover:not (.unstriped ) tr:nth-of-type(even):hover {
 
 .tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
 	background: #e6e6e6;
-	color: #1779ba
+	color: #000
 }
 
 .tabs-content {
