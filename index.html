@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
   
   <title>GENUCELL - 어제와 다른 또 하나의 나 Go-Back!</title>
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
     <div class="section home-area" id="home">
       <div class="wrapper">
         <div class="banner-area">
-          <h2>제너셀 <br>고백키트</h2>
+          <h2 class="slide_header">제너셀 <br>고백키트</h2>
           <span>추억 속으로 Go Back! <br />그 날의 당신을 기억하나요?</span>
         </div>
         <div class="overlay" id="myDiv">
@@ -33,8 +33,38 @@
 
     <div class="section about-area" id="about">
       <div class="wrapper">
-        <h2>Little About</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has </p>
+        <h2 class="header_text">제너셀 앰플</h2>
+        <p class="body_text">
+            고백키트<br>
+        </p>
+        <span class="price_text">￦99,000</span>
+        <div id="carousel_container">
+          <div id="carousel_inner">
+            <ul id="carousel_ul">
+              <li>
+                <p class="slider-text1 reply_text">
+                  "<br>정말 피부가 달라지는게 너무 느껴져요~<br>
+                  품절되기전 챙겨놔야할 필수템<br>"
+                  <br>songcaemi
+              </p>  
+                 
+              </li>
+              <li>
+                <p class="slider-text2 reply_text">
+                  "<br>이거진짜 최고에요ㅠㅠ이거쓰고 피부톤 깔끔해지고 진짜 너무최고..<br>
+                  제남자친구도 탐내서 한세트 줬습니다<br>
+                  "<br>jeehye98
+                </p>  
+              </li>
+              <li>
+                <p class="slider-text3 reply_text">
+                  "<br>넘넘 좋아요 바르고나면 피부가 맑아지고 쫀쫀한 느낌이라서 듬뿍듬뿍 바르게 되네요^^
+                  <br>"<br>조현*
+                </p>
+              </li>
+            </ul>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -129,6 +159,7 @@
   <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
   <script type="text/javascript" src="js/jquery.ripples.js"></script>
   <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script>
     $(document).ready(function(){
 
@@ -155,7 +186,7 @@
       $('#pagepiling').pagepiling({
         /*direction : 'horizontal',*/
         direction : 'vertical',
-        sectionsColor: ['#f2f2f2', '#ABABAD', '#94B3E4', '#03a0b0', '#ff6f69', '#FFB275'],
+        sectionsColor: ['#f2f2f2', '#DEDEDC', '#94B3E4', '#03a0b0', '#ff6f69', '#FFB275'],
         anchors : ['home',  'about', 'port', 'service', 'contact'],
         easing: 'swing',
         loopBottom: false,
