@@ -36,7 +36,7 @@ p, span {
 };
 
 .wrapper > .banner-area > p {
-	text-algin : right;
+	text-align : right;	
 }
 
 .banner-area {
@@ -46,7 +46,7 @@ p, span {
 .banner-area > span {
 	font-size: 25px;
 	text-shadow: 3px 2px 2px gray;
-	text-algin : right;
+    text-align : right;	
 }
 
 .about-area {
@@ -404,7 +404,7 @@ p, span {
 /*
   Footer
   Date : 20190522
-  Director : �쟾�삎�룞
+  Director : 전형동
 */
 .footer-wrapper {
 	bottom: 0;
