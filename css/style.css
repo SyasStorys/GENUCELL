@@ -95,13 +95,35 @@ p, span {
 	background-position: center center;
 }
 
-.services-area {
-	background-image: url(../img/bg_5.jpg);
+.company-bg {
+	/* background-image: url(../img/bg_5.jpg); */
+	background-image: url('../img/service/01.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	opacity: 0.7;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: -1;
 }
 
+.display-body {
+
+	
+}
+
+.company-head-text {
+	text-shadow: 5px 3px black;
+}
+
+.company-text {
+	color : black;
+	font-weight: 450;
+	font-size: 25px;
+}
 
 
 .contact-area {
@@ -477,6 +499,10 @@ p, span {
 
 .contact-details>p {
 	font-size: 13px;
+}
+
+.contact-details > img {
+	width : 200px;
 }
 
 .input-group>h6 {
