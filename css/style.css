@@ -1,5 +1,27 @@
+/*
+	Menu
+
+	Mobile
+	------- max-width: 767px
+	------- min-width: 768px&max-width: 991px
+	------- iPad Pro
+
+	Web
+	------- Default
+	------- About-Area
+	------- Footer
+	------- Full Screen Navbar
+
+
+
+
+*/
+
+
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans|Noto+Sans+KR&display=swap');
+
+/* Default */
 
 h2 {
 	color: #fff;
@@ -194,7 +216,11 @@ p, span {
 	transition: 1s;
 }
 
-/* responsive.css */
+/* 
+	responsive.css 
+	max-width: 767px
+
+*/
 @media handheld, only screen and (max-width: 767px) {
 	.wrapper {
 		width: 90%;
@@ -223,9 +249,8 @@ p, span {
 	.contact-area textarea {
 		width: 85%;
 	}
-	.about-area {
-		-webkit-background-size: cover;
-		background-position: center center;
+	#about {
+		background-size: 180%;
 	}
 	.portfolio-area {
 		-webkit-background-size: cover;
@@ -289,6 +314,11 @@ p, span {
 }
 
 
+/*
+	responsive
+	min-width: 768px&max-width: 991px		
+*/
+
 @media handheld, only screen and (min-width: 768px) and (max-width: 991px) {
 	.wrapper {
 		width: 90%;
@@ -309,6 +339,9 @@ p, span {
 	.about-area p, .portfolio-area p, .services-area p, .contact-area p {
 		line-height: 130%;
 		font-size: 50px;
+	}
+	#about {
+		background-size: 180%;
 	}
 	.contact-area input[type=text], .contact-area input[type=email] {
 		width: 85%;
@@ -381,7 +414,313 @@ p, span {
 	}
 }
 
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+.wrapper {
+		width: 90%;
+	}
+	#navbar>ul>li {
+		font-size: 30px;
+	}
+	.home-area h2 {
+		font-size: 130px;
+	}
+	h2 {
+		font-size: 130px;
+	}
+	.banner-area span {
+		font-size: 45px;
+		line-height: 1.3;
+	}
+	.about-area p, .portfolio-area p, .services-area p, .contact-area p {
+		line-height: 130%;
+		font-size: 50px;
+	}
+	#about {
+		background-size: 180%;
+	}
+	.contact-area input[type=text], .contact-area input[type=email] {
+		width: 85%;
+		height: 60px;
+	}
+	.contact-area textarea {
+		width: 85%;
+		height: 140px;
+	}
+	.benner-open {
+		font-size: 60px;
+		cursor: pointer;
+		margin: 0 auto;
+		border: 5px solid #FFF;
+		width: 250px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+	}
+	.benner-open:hover {
+		background: #FFF;
+		color: #EBA9B3;
+	}
+	.about-area {
+		-webkit-background-size: cover;
+		background-position: center center;
+	}
+	.portfolio-area {
+		-webkit-background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100vh;
+		background-position: center center;
+	}
+	.pp-tableCell>.wrapper>h2 {
+		font-size: 90px;
+		margin-top: -300px;
+		text-align: center;
+	}
+	.productBtn {
+		font-size: 30px;
+		font-weight: 700;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		border: 1px solid #FFF;
+		width: 250px;
+		height: 60px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+		color: #000;
+	}
+	.productBtn:hover {
+		font-size: 30px;
+		font-weight: 700;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		border: 1px solid #FFF;
+		width: 250px;
+		height: 60px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #000;
+	}
+
 }
+
+/* Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+.wrapper {
+		width: 90%;
+	}
+	#navbar>ul>li {
+		font-size: 30px;
+	}
+	.home-area h2 {
+		font-size: 130px;
+	}
+	h2 {
+		font-size: 130px;
+	}
+	.banner-area span {
+		font-size: 45px;
+		line-height: 1.3;
+	}
+	.about-area p, .portfolio-area p, .services-area p, .contact-area p {
+		line-height: 130%;
+		font-size: 50px;
+	}
+	#about {
+		background-size: 180%;
+	}
+	.contact-area input[type=text], .contact-area input[type=email] {
+		width: 85%;
+		height: 60px;
+	}
+	.contact-area textarea {
+		width: 85%;
+		height: 140px;
+	}
+	.benner-open {
+		font-size: 60px;
+		cursor: pointer;
+		margin: 0 auto;
+		border: 5px solid #FFF;
+		width: 250px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+	}
+	.benner-open:hover {
+		background: #FFF;
+		color: #EBA9B3;
+	}
+	.about-area {
+		-webkit-background-size: cover;
+		background-position: center center;
+	}
+	.portfolio-area {
+		-webkit-background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100vh;
+		background-position: center center;
+	}
+	.pp-tableCell>.wrapper>h2 {
+		font-size: 90px;
+		margin-top: -300px;
+		text-align: center;
+	}
+	.productBtn {
+		font-size: 30px;
+		font-weight: 700;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		border: 1px solid #FFF;
+		width: 250px;
+		height: 60px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+		color: #000;
+	}
+	.productBtn:hover {
+		font-size: 30px;
+		font-weight: 700;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		border: 1px solid #FFF;
+		width: 250px;
+		height: 60px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #000;
+	}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  	.wrapper {
+		width: 90%;
+	}
+	#navbar>ul>li {
+		font-size: 30px;
+	}
+	.home-area h2 {
+		font-size: 130px;
+	}
+	h2 {
+		font-size: 130px;
+	}
+	.banner-area span {
+		font-size: 45px;
+		line-height: 1.3;
+	}
+	.about-area p, .portfolio-area p, .services-area p, .contact-area p {
+		line-height: 130%;
+		font-size: 50px;
+	}
+	#about {
+		background-size: 180%;
+	}
+	.contact-area input[type=text], .contact-area input[type=email] {
+		width: 85%;
+		height: 60px;
+	}
+	.contact-area textarea {
+		width: 85%;
+		height: 140px;
+	}
+	.benner-open {
+		font-size: 60px;
+		cursor: pointer;
+		margin: 0 auto;
+		border: 5px solid #FFF;
+		width: 250px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+	}
+	.benner-open:hover {
+		background: #FFF;
+		color: #EBA9B3;
+	}
+	.about-area {
+		-webkit-background-size: cover;
+		background-position: center center;
+	}
+	.portfolio-area {
+		-webkit-background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100vh;
+		background-position: center center;
+	}
+	.pp-tableCell>.wrapper>h2 {
+		font-size: 90px;
+		margin-top: -300px;
+		text-align: center;
+	}
+	.productBtn {
+		font-size: 30px;
+		font-weight: 700;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		border: 1px solid #FFF;
+		width: 250px;
+		height: 60px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+		color: #000;
+	}
+	.productBtn:hover {
+		font-size: 30px;
+		font-weight: 700;
+		cursor: pointer;
+		margin: 0 auto;
+		margin-bottom: 100px;
+		border: 1px solid #FFF;
+		width: 250px;
+		height: 60px;
+		padding: 10px 30px;
+		border-radius: 10px;
+		text-align: center;
+		transition: 1s;
+		background-color: rgba(255, 255, 255, 0.5);
+		color: #000;
+	}
+
+}
+
+
+
+
 
 /*
   Full Screen Navbar
