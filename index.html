@@ -24,7 +24,6 @@
           <div class="content">
             <a href="project.html">프로젝트</a>
             <a href="product.html">제품소개</a>
-            <a href="#">채용정보</a>
           </div>  
         </div>
         <div class="benner-open" onclick="openDiv()" > Open </div>
@@ -33,59 +32,28 @@
 
     <div class="section about-area" id="about">
       <div class="wrapper">
-        <h2 class="header_text">제너셀 앰플</h2>
-        <p class="body_text">
+        <!-- <h2 class="header_text">제너셀 앰플</h2> -->
+        <!-- <p class="body_text">
             고백키트<br>
         </p>
-        <span class="price_text">￦99,000</span>
-        <div id="carousel_container">
-          <div id="carousel_inner">
-            <ul id="carousel_ul">
-              <li>
-                <p class="slider-text1 reply_text">
-                  "<br>정말 피부가 달라지는게 너무 느껴져요~<br>
-                  품절되기전 챙겨놔야할 필수템<br>"
-                  <br>songcaemi
-              </p>  
-                 
-              </li>
-              <li>
-                <p class="slider-text2 reply_text">
-                  "<br>이거진짜 최고에요ㅠㅠ이거쓰고 피부톤 깔끔해지고 진짜 너무최고..<br>
-                  제남자친구도 탐내서 한세트 줬습니다<br>
-                  "<br>jeehye98
-                </p>  
-              </li>
-              <li>
-                <p class="slider-text3 reply_text">
-                  "<br>넘넘 좋아요 바르고나면 피부가 맑아지고 쫀쫀한 느낌이라서 듬뿍듬뿍 바르게 되네요^^
-                  <br>"<br>조현*
-                </p>
-              </li>
-            </ul>
-            </div>
-          </div>
+        <span class="price_text">￦99,000</span> -->
+        <div class="btnBlock">
+          <div class="productBtn" onclick="openProduct()" > <span>자세히보기</span> </div>
+        </div>
       </div>
     </div>
 
     <div class="section portfolio-area" id="port">
       <div class="wrapper">
-        <h2>Some Works of Mine</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <!-- <h2>Some Works of Mine</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
         <div class="btnBlock">
-          <div class="productBtn" onclick="openProduct()" > <span>제품 상세보기</span> </div>
+          <div class="productBtn" onclick="openProduct()" > <span>자세히보기</span> </div>
         </div>
       </div>
 
     </div>
     <div class="section services-area" id="service">
-      <div class="wrapper">
-        <h2>These are my Services</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-
-    </div>
-    <div class="section contact-area" id="contact">
       <!-- Footer -->
       <div class="footer-wrapper">
         <div class="button-wrapper">
@@ -142,14 +110,12 @@
           </footer>
         </div>
       </div>
-
-
       <div class="wrapper">
-        <h2>Contact area</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <h2>These are my Services</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
-
     </div>
+
   </div>
 
 
@@ -186,8 +152,8 @@
       $('#pagepiling').pagepiling({
         /*direction : 'horizontal',*/
         direction : 'vertical',
-        sectionsColor: ['#f2f2f2', '#DEDEDC', '#94B3E4', '#03a0b0', '#ff6f69', '#FFB275'],
-        anchors : ['home',  'about', 'port', 'service', 'contact'],
+        sectionsColor: ['#f2f2f2', '#fff', '#F9F9F9', '#03a0b0'],
+        anchors : ['home',  'about', 'port', 'service'],
         easing: 'swing',
         loopBottom: false,
         loopTop: false,
@@ -198,7 +164,7 @@
           'textColor' : '#000',
           'bulletsColor' : '#000',
           'position' : 'right',
-          'tooltips' : ['Home', 'About', 'Portfolio', 'Services', 'Contact']
+          'tooltips' : ['Home', 'About', 'Portfolio', 'Services']
         },
         normalScrollElements: null,
         keyboardScrolling: true,

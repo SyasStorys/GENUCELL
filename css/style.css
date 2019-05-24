@@ -55,11 +55,11 @@ p, span {
 */
 
 .about-area {
-	background-image: url(../img/product/01.jpg);
-	/* -webkit-background-size: cover; */
-	background-size: 300px;
+	background-image: url(../img/product/02.jpg);
+	-webkit-background-size: cover;
+	background-size: 60%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 }
 
 .about-area > div > h2{
@@ -88,7 +88,7 @@ p, span {
 }
 
 .portfolio-area {
-	background-image: url(../img/bg_4.jpg);
+	background-image: url(../img/product/01.jpg);
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
 	background-size: 60%;
@@ -137,35 +137,33 @@ p, span {
 }
 
 .productBtn {
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 700;
 	cursor: pointer;
 	margin: 0 auto;
 	border: 1px solid #FFF;
-	width: 150px;
-	height: 40px;
+	width: 120px;
+	height: 25px;
 	padding: 10px 30px;
 	border-radius: 10px;
 	text-align: center;
 	transition: 1s;
-	background: #FFF;
-	color: #000;
+	background: #000;
+	color: #fff;
 }
 
 .productBtn:hover {
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 800;
 	cursor: pointer;
 	margin: 0 auto;
 	border: 1px solid #FFF;
-	width: 150px;
-	height: 40px;
+	width: 120px;
+	height: 25x;
 	padding: 10px 30px;
 	border-radius: 10px;
 	text-align: center;
 	transition: 1s;
-	background-color: rgba(255, 255, 255, 0.5);
-	color: #ECD123;
 }
 
 /* responsive.css */
