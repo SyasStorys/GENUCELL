@@ -57,7 +57,7 @@ p, span {
 .about-area {
 	background-image: url(../img/product/02.jpg);
 	-webkit-background-size: cover;
-	background-size: 60%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -91,7 +91,7 @@ p, span {
 	background-image: url(../img/product/01.jpg);
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
-	background-size: 60%;
+	background-size: 70%;
 	background-position: center center;
 }
 
@@ -101,6 +101,8 @@ p, span {
 	background-size: cover;
 	background-position: center center;
 }
+
+
 
 .contact-area {
 	background-image: url(../img/bg_6.jpg);
@@ -261,12 +263,6 @@ p, span {
 	}
 }
 
-@media handheld, only screen and (min-width: 767px) and (max-width: 1024px) {
-	.home-area {
-		background-size: cover;
-	    background-position: left center;
-    }
-}
 
 @media handheld, only screen and (min-width: 768px) and (max-width: 991px) {
 	.wrapper {
@@ -359,6 +355,14 @@ p, span {
 		background-color: rgba(255, 255, 255, 0.5);
 		color: #ECD123;
 	}
+}
+
+
+@media handheld, only screen and (max-width: 1024px) {
+	.home-area {
+		background-size: cover;
+	    background-position: center center;
+    }
 }
 
 /*
@@ -732,79 +736,4 @@ p, span {
 		(:first-child ) {
 		float: right;
 	}
-}
-
-
-
-/*
-	slide text
-*/
-#carousel_inner {
-    float: left;
-    width: 350px;
-    height : 200px;
-    overflow: hidden;
-    background: #F0F0F0;
-}
-
-#carousel_ul > li > p {
-	margin-top : 20px;
-    width: 300px;
-    height: 110px;
-}
-
-#carousel_ul {
-    position: relative;
-    left: -210px;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width: 9999px;
-    padding-bottom: 10px;
-}
-
-#carousel_ul li {
-    float: left;
-    width: 300px;
-    padding: 0px;
-    height: 200px;
-    background: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#carousel_ul li p {
-	text-align: center;
-    margin-bottom: -4px;
-    cursor: pointer;
-    cursor: hand;
-    border: 0px;
-}
-
-#left_scroll, #right_scroll {
-    float: left;
-    height: 130px;
-    width: 35px;
-    margin-top: 50px;
-    margin-left: 20px;
-}
-
-#left_scroll p, #right_scroll p {
-    border: 0;
- /* remove the default border of linked image */
-/*styling*/
-    cursor: pointer;
-    cursor: hand;
-}
-
-#left_scroll p {
-    width: 25px;
-    height: 25px;
-}
-
-#right_scroll p {
-    width: 25px;
-    height: 25px;
 }
