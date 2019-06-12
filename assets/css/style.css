@@ -669,8 +669,20 @@ section {
     overflow-x: hidden;
 }
 
-#product_header {
+#product1_header {
 	background: url(../img/product_header.png) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: table;
+    height: calc(100vh - 72px);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;	
+}
+
+#product2_header {
+	background: url(../img/product_2_main.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     display: table;
