@@ -695,7 +695,7 @@ section {
 
 .header-wrapper .header-overlay {
     min-height: 100vh;
-    /*min-width: 100vw;*/
+    min-width: 100vw;
     opacity: 0.4;
     position: absolute;
     top: 0;
