@@ -670,7 +670,7 @@ section {
 }
 
 #product1_header {
-	background: url(../img/product_header.png) no-repeat center center;
+	background: url(../img/product/product1_header.JPG) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     display: table;
@@ -682,7 +682,7 @@ section {
 }
 
 #product2_header {
-	background: url(../img/product_2_main.jpg) no-repeat center center;
+	background: url(../img/product/product2_header.JPG) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     display: table;
