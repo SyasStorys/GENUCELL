@@ -658,7 +658,7 @@ section {
 /*------------------------------  header -----------------------------------*/
 
 #index_header {
-    background: url(../img/main_header.png) no-repeat center center;
+    background: url(../img/background.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     display: table;
